@@ -1,0 +1,23 @@
+﻿body {
+    background-image: url("http://www.artsfon.com/pic/201501/2560x1600/artsfon.com-49460.jpg");
+}
+fieldset {
+    margin-left: 38%;
+    margin-right: 38%;
+    background-color: white;
+}
+input {
+    line-height:1.5rem;
+    font-size:1.25rem;
+}
+button {
+    height:50px;
+    width:50px;
+    font-size: 1.25rem;
+    color:white;
+    background-color: black;
+}
+#output {
+    margin-left:15%;
+    margin-right:15%;
+}

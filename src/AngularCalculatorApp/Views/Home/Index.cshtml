@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="AngularCalculatorApp">
+<head>
+    <link href="~/StyleSheet.css" rel="stylesheet" />
+    <title>Angular Event Practice</title>
+</head>
+<body ng-controller="CalculatorController as c">
+    <center>
+        <fieldset>
+            <h1>Simple Calculator</h1>
+
+            <input type="number" placeholder="first number" ng-model="{{c.userInputOne}}"/>
+            <br />
+            <h4>"{{c.operator}}"</h4>
+            <br />
+            <input type="number" placeholder="second number" ng-model="{{c.userInputTwo}}" />
+           
+            <br />
+            <button id="operator" ng-click="c.getOperator(+)">+</button>
+            <button id="operator" ng-click="c.getOperator(-)">-</button>
+            <button id="operator" ng-click="c.getOperator(*)">x</button>
+            <button id="operator" ng-click="c.getOperator(/)">/</button>
+            <button ng-click="c.userInputOne(null)">C</button>
+            <button ng-click="c.calculateEquation()">=</button>
+
+            @*<br />
+            <button ng-click="c.userInput1">1</button>
+            <button ng-click="c.userInput2">2</button>
+            <button ng-click="c.userInput3">3</button>
+            <br />
+            <button ng-click="c.userInput4">4</button>
+            <button ng-click="c.userInput5">5</button>
+            <button ng-click="c.userInput6">6</button>
+            <br />
+            <button ng-click="c.userInput7">7</button>
+            <button ng-click="c.userInput8">8</button>
+            <button ng-click="c.userInput9">9</button>
+            <br />
+            <button ng-click="c.userInput0">0</button>
+            <button ng-click="c.userInputDot">.</button>*@
+
+        </fieldset>
+    </center>
+    <script src="~/bower_components/angular/angular.min.js"></script>
+    <script src="~/ngApp/app.js"></script>
+</body>
+</html>
